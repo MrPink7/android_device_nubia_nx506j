@@ -75,6 +75,7 @@ $(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-2048-hwui
 PRODUCT_PACKAGES += \
     audiod \
     audio.a2dp.default \
+    audio_amplifier.msm8974 \
     audio_policy.msm8974 \
     audio.primary.msm8974 \
     audio.r_submix.default \
@@ -84,6 +85,7 @@ PRODUCT_PACKAGES += \
     libqcomvisualizer \
     libqcomvoiceprocessing \
     libqcomvoiceprocessingdescriptors \
+    libtfa9890_interface \
     tinymix
 
 # Audio configuration
@@ -228,8 +230,8 @@ PRODUCT_PACKAGES += \
 #    libOmxMux \
 #    libOmxVdecHevc \
 
-PRODUCT_BOOT_JARS += \
-    qcmediaplayer
+#PRODUCT_BOOT_JARS += \
+#    qcmediaplayer
 
 # Power
 PRODUCT_PACKAGES += \
@@ -261,7 +263,7 @@ PRODUCT_PACKAGES += \
 
 # for nubia camera app
 PRODUCT_PACKAGES += \
-    libnubia
+    libshim_nubia
 
 # Thermal config
 PRODUCT_COPY_FILES += \
@@ -307,10 +309,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libion
-
-PRODUCT_PACKAGES += \
-    LatinIME \
-    libjni_latinime
 
 # GPS configuration
 PRODUCT_COPY_FILES += \

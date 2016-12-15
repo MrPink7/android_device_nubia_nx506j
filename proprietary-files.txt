@@ -96,7 +96,7 @@ bin/mm-qcamera-app
 bin/mm-qcamera-daemon
 lib/hw/camera.msm8974.so:lib/hw/camera.msm8974.so
 lib/libqomx_core.so
-lib/libOmxVdecHevc.so
+#lib/libOmxVdecHevc.so
 lib/libchromatix_imx135_069_liveshot.so
 lib/libchromatix_imx135_front_liveshot.so
 lib/libchromatix_imx135_gbao_lc898122_liveshot.so
@@ -128,17 +128,28 @@ vendor/lib/egl/libGLESv2_adreno.so
 vendor/lib/egl/libq3dtools_adreno.so
 
 # DRM
+#blobs from Bacon
 bin/qseecomd
-#blobs from hammerhead MM
 vendor/lib/drm/libdrmwvmplugin.so
 vendor/lib/mediadrm/libwvdrmengine.so
 vendor/lib/libdrmdecrypt.so
-vendor/lib/libwvdrm_L1.so
+vendor/lib/libwvdrm_L3.so
 vendor/lib/libwvm.so
 vendor/lib/libWVphoneAPI.so
-vendor/lib/libWVStreamControlAPI_L1.so
+vendor/lib/libWVStreamControlAPI_L3.so
 
 # Audio
+etc/tfa98xx/coldboot.patch
+etc/tfa98xx/zte.config
+etc/tfa98xx/zte.patch
+etc/tfa98xx/zte.speaker
+etc/tfa98xx/zte_hq.eq
+etc/tfa98xx/zte_hq.preset
+etc/tfa98xx/zte_hq_dolby.eq
+etc/tfa98xx/zte_hq_dolby.preset
+etc/tfa98xx/zte_speech.eq
+etc/tfa98xx/zte_speech.preset
+/lib/libtfa98xx.so
 vendor/lib/soundfx/libqcbassboost.so
 vendor/lib/soundfx/libqcreverb.so
 vendor/lib/soundfx/libqcvirt.so
@@ -183,7 +194,7 @@ lib/hw/sensors.oem.so
 vendor/lib/hw/sensors.msm8974.so
 
 # Thermal
-bin/thermal-engine
+vendor/bin/thermal-engine
 
 # NFC
 #lib/hw/nfc_nci.bcm2079x.default.so
@@ -230,13 +241,12 @@ vendor/lib/libactuator_zte_rohm_bu64291gwz_z7_front_camera.so
 vendor/lib/libadiertac.so
 vendor/lib/libadreno_utils.so
 vendor/lib/libadsprpc.so
-vendor/lib/libalarmservice_jni.so
+#vendor/lib/libalarmservice_jni.so
 vendor/lib/libaudcal.so
 vendor/lib/libbtnv.so
+vendor/lib/libbccQTI.so
 vendor/lib/libC2D2.so
 vendor/lib/libc2d30-a3xx.so
-vendor/lib/libc2d30-a4xx.so
-vendor/lib/libc2d30.so
 vendor/lib/libCB.so
 vendor/lib/libchromatix_imx132_common.so
 vendor/lib/libchromatix_imx132_default_video.so
@@ -563,13 +573,13 @@ vendor/lib/libmsapm_jni.so
 vendor/lib/libnetmgr.so
 vendor/lib/libNimsWrap.so
 vendor/lib/liboemcamera.so
-vendor/lib/libOmxAacDec.so
-vendor/lib/libOmxAmrwbplusDec.so
-vendor/lib/libOmxEvrcDec.so
-vendor/lib/libOmxMux.so
-vendor/lib/libOmxQcelp13Dec.so
-vendor/lib/libOmxWmaDec.so
-#vendor/lib/libOpenCL.so
+##vendor/lib/libOmxAacDec.so
+##vendor/lib/libOmxAmrwbplusDec.so
+##vendor/lib/libOmxEvrcDec.so
+##vendor/lib/libOmxMux.so
+##vendor/lib/libOmxQcelp13Dec.so
+##vendor/lib/libOmxWmaDec.so
+vendor/lib/libOpenCL.so
 vendor/lib/libperipheral_client.so
 vendor/lib/libpfecommon.so
 vendor/lib/libprofiler_msmadc.so
